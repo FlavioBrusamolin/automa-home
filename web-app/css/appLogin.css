@@ -1,0 +1,110 @@
+div#interface {
+	background-color: #133148;
+	width:100%;
+	height:100vh;
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:cover;
+}
+
+div#borda_login { 
+	height:550px;
+	background-color:transparent;
+    position:absolute;
+	top:50%;
+	margin-top:-275px;
+}
+
+div#tela_login {
+    padding:20px;
+    height:500px;
+    position:absolute;
+	top:50%;
+	margin-top:-250px;
+	background-color: #20405b;
+	text-align:center;
+	/*border:1px solid #66afe9;
+	-webkit-box-shadow: 0px 0px 12px 4px rgba(78,137,184,0.39);
+	-moz-box-shadow: 0px 0px 12px 4px rgba(78,137,184,0.39);
+	box-shadow: 0px 0px 12px 4px rgba(78,137,184,0.39);*/
+	-webkit-box-shadow: 0px 0px 88px -7px rgba(0,0,0,0.12);
+	-moz-box-shadow: 0px 0px 88px -7px rgba(0,0,0,0.12);
+	box-shadow: 0px 0px 88px -7px rgba(0,0,0,0.12);
+}
+
+h1#nome {
+	color:#eaeef1;
+	letter-spacing:1px;
+	font-size:33px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+form#form_login {
+	margin-top:50px;
+}
+
+.form-group {
+	padding-top:5px; 
+}
+
+.form-control {
+	background-color:#20405b;
+	border-color:#57748a;
+	color:#d7dde1;
+	border-radius:15px;
+}
+
+input[type = "email"]::-webkit-input-placeholder { 
+	color:#57748a;
+}
+
+input[type = "email"]::-moz-placeholder { 
+	color:#57748a;
+}
+
+input[type = "email"]:-ms-input-placeholder { 
+	color:#57748a;
+}
+
+input[type = "email"]:-moz-placeholder { 
+	color:#57748a;
+}
+
+input[type = "password"]::-webkit-input-placeholder { 
+	color:#57748a;
+}
+
+input[type = "password"]::-moz-placeholder { 
+	color:#57748a;
+}
+
+input[type = "password"]:-ms-input-placeholder { 
+	color:#57748a;
+}
+
+input[type = "password"]:-moz-placeholder { 
+	color:#57748a;
+}
+
+button#entrar {
+	margin-top:40px;
+	background-color:#6da21c;
+	color:#eaeef1;
+	border-radius:20px;
+	height:41px;
+	font-size:13px; 
+	outline: thin dotted;
+	outline: 0px auto -webkit-focus-ring-color;
+	outline-offset: 0px;
+}
+
+div#baixo {
+	margin-top:230px;
+	text-align:center;
+	background-color:transparent;
+}
+
+a#cadastrar {
+	color:#57748a;
+	font-size:15px;
+}

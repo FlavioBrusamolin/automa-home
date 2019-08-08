@@ -1,0 +1,41 @@
+<html ng-app="automaHome">
+
+</html>
+
+<head>
+    <meta name="charset" content="utf-8" />
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0" />
+    <title>AutomaHome</title>
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css" />
+    <script type="text/javascript" src="lib/bootstrap/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/appLogin.css" />
+    <link rel="stylesheet" type="text/css" href="css/appCadastro.css" />
+    <link rel="stylesheet" type="text/css" href="css/appIluminacao.css" />
+    <link rel="stylesheet" type="text/css" href="css/appJardim.css" />
+    <link rel="stylesheet" type="text/css" href="css/appCozinha.css" />
+    <link rel="stylesheet" type="text/css" href="css/appAgua.css" />
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular/angular-route.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers/headerCtrl.js"></script>
+    <script src="js/controllers/loginCtrl.js"></script>
+    <script src="js/controllers/cadastroCtrl.js"></script>
+    <script src="js/controllers/iluminacaoCtrl.js"></script>
+    <script src="js/controllers/jardimCtrl.js"></script>
+    <script src="js/controllers/cozinhaCtrl.js"></script>
+    <script src="js/controllers/aguaCtrl.js"></script>
+    <script src="js/config/routeConfig.js"></script>
+    <script src="js/services/usuariosService.js"></script>
+    <script src="js/services/mqttService.js"></script>
+    <script src="js/services/dadosmqttService.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.min.js" type="texto / javascript"></script>
+</head>
+
+<body>
+    <div ng-view></div>
+</body>
+
+</html>

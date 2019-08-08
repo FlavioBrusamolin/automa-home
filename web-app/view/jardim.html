@@ -1,0 +1,93 @@
+<nav class="navbar navbar-default" id="navbar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" ng-controller="headerCtrl">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a ng-class="{active:isActive('/lighting')}" href="#!/lighting">Lighting</a></li>
+                <li><a ng-class="{active:isActive('/kitchen')}" href="#!/kitchen">Kitchen</a></li>
+                <li><a ng-class="{active:isActive('/garden')}" href="#!/garden">Garden</a></li>
+                <li><a ng-class="{active:isActive('/waterreuse')}" href="#!/waterreuse">Water Reuse</a></li>
+                <li><a id="sair" href="#!/login">Log Out</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <div class="centro col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xs-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
+        <div class="row">
+            <div class="card col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xs-offset-2 col-sm-offset-2 col-md-offset-2 col-lg-offset-2">
+                <div class="row">
+                    <div class="col-lg-2 topo_card"><img src="images/umidade.png" /></div>
+                    <div class="col-lg-10 topo_card">
+                        <h5 class="txt_card">Humidity</h5>
+                    </div>
+                </div>
+                <h2 class="informacao_card">{{jardim.umidade}}h%</h2>
+                <div class="row">
+                    <div class=col-lg-9 id="div_umidade">
+                        <input type="number" class="form-control" name="umidade" ng-model="umidade" placeholder="Minimum humidity">
+                    </div>
+                    <button id="enviar_umidade" type="button" class="btn col-lg-3" ng-click="enviar(umidade)">OK</button>
+                </div>
+            </div>
+            <div class="card col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xs-offset-2 col-sm-offset-2 col-md-offset-2 col-lg-offset-1">
+                <div class="row">
+                    <div class="col-lg-2 topo_card"><img src="images/pH.png" /></div>
+                    <div class="col-lg-10 topo_card">
+                        <h5 class="txt_card">pH</h5>
+                    </div>
+                </div>
+                <h2 class="informacao_card">{{jardim.pH}}pH</h2>
+            </div>
+            <div class="card col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xs-offset-2 col-sm-offset-2 col-md-offset-2 col-lg-offset-1">
+                <div class="row">
+                    <div class="col-lg-2 topo_card"><img src="images/valvula.png" /></div>
+                    <div class="col-lg-10 topo_card">
+                        <h5 class="txt_card">Valve</h5>
+                    </div>
+                </div>
+                <h2 class="informacao_card">{{jardim.valvula}}</h2>
+                <div class="row">
+                    <div class=col-lg-7 id="div_valvula">
+                        <h5 id="txt_valvula">Power</h5>
+                    </div>
+                    <button id="on_valvula" type="button" class="btn col-lg-2" ng-click="ligarvalvula()">ON</button>
+                    <button id="off_valvula" type="button" class="btn col-lg-3" ng-click="desligarvalvula()">OFF</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xs-offset-4 col-sm-offset-4 col-md-offset-4 col-lg-offset-4"
+            id="estatistica">
+            <a href="" data-toggle="modal" data-target="#modalJardim" id="cadastrar">Do you
+                want to analyze usage statistics?</a>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalJardim" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-vent modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle"><strong>Garden statistics</strong></h5>
+            </div>
+            <div class="modal-body">
+                <h5>A umidade média do jardim em {{amostras}} verificações é de {{umidadeMedia}}h%.</h5>
+                <h5>O pH médio do jardim em {{amostras}} verificações é de {{pHMedio}}pH.</h5>
+                <h5>A válvula esteve acionada em {{estatisticaValvula}}% do tempo total de verificação.</h5>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                <!-- <button type = "button" class = "btn btn-secondary">Bring</button> -->
+            </div>
+        </div>
+    </div>
+</div>

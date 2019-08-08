@@ -1,0 +1,18 @@
+.display_validade {
+    background-color:transparent;
+    border:0;
+    color:#eaeef1;
+    margin-left:0;
+    font-size:13px;
+    font-family:helvetica;
+    margin-top:5px;
+}
+
+div#teste > input {
+    border-radius:15px;
+    border-top-color:#57748a;
+}
+
+div#teste > input:focus {
+    border-top-color:#66afe9;
+}

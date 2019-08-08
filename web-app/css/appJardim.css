@@ -1,0 +1,81 @@
+input[type = "number"]::-webkit-input-placeholder { 
+	color:#57748a;
+}
+
+input[type = "number"]::-moz-placeholder { 
+	color:#57748a;
+}
+
+input[type = "number"]:-ms-input-placeholder { 
+	color:#57748a;
+}
+
+input[type = "number"]:-moz-placeholder { 
+	color:#57748a;
+}
+
+input[type = "number"] {
+	border-radius:0px 0px 0px 15px;
+	padding-right:5px;
+	border-top:1px solid #66afe9
+}
+
+div#div_umidade {
+	background-color:transparent;
+	padding:0;
+}
+
+button#enviar_umidade {
+	border-radius:0px 0px 15px 0px;
+	background-color:transparent;
+	color:#eaeef1;
+	border-left:1px solid #66afe9;
+	border-top:1px solid #66afe9;
+	outline:thin dotted;
+	outline:0px auto -webkit-focus-ring-color;
+	outline-offset:0px;
+	font-size:12px;
+	padding-top:9px;
+	padding-right:15px;
+}
+
+div#div_valvula {
+	background-color:transparent;
+	text-align:left;
+	border-top:1px solid #66afe9;
+}
+
+h5#txt_valvula {
+	color:#eaeef1;
+	font-size:15px;
+	letter-spacing:0.4px;
+}
+
+button#on_valvula {
+	border-radius:0px;
+	text-align:center;
+	background-color:transparent;
+	color:#eaeef1;
+	border-top:1px solid #66afe9;
+	border-right:1px solid #66afe9;
+	outline: thin dotted;
+	outline: 0px auto -webkit-focus-ring-color;
+	outline-offset: 0px;
+	padding-left:0px; 
+	font-size:12px;
+	padding-top:9px;
+}
+
+button#off_valvula {
+	border-radius:0px 0px 15px 0px;
+	text-align:center;
+	background-color:transparent;
+	color:#eaeef1;
+	border-top:1px solid #66afe9;
+	outline:thin dotted;
+	outline:0px auto -webkit-focus-ring-color;
+	outline-offset:0px;
+	padding-left:6px;
+	font-size:12px;
+	padding-top:9px;
+}
